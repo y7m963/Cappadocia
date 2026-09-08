@@ -8,3 +8,10 @@ html {
     scroll-behavior: smooth;
 
 }
+
+h2 {
+    color: var(--Primary-green);
+    font-family: var(--headings);
+    font-weight: 700;
+    font-size: 3.25rem;
+}

@@ -183,3 +183,42 @@ nav>div {
     position: absolute;
     animation: badgetext 15s linear infinite;
 }
+
+main {
+    margin: 120px;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    align-items: center;
+}
+
+.highlights-container1 {
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main-headlines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.highlights-container1>p {
+    align-items: center;
+    font-family: var(--normal-text);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 110%;
+}
