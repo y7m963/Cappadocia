@@ -70,3 +70,116 @@ nav>div {
     color: var(--Primary-gelb);
     background-image: none !important;
 }
+
+
+.hero {
+    width: 1440px;
+    height: 520px;
+    background-image: url(./assets/img/Hero-img-2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 200px;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1440px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.img-container {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+
+    animation: slideRight 4.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+.img1 {
+    position: relative;
+    height: 520px;
+}
+
+.img2 {
+    position: relative;
+    margin-left: -600px;
+    height: 520px;
+
+    animation: imgswitsch 2s ease-in-out forwards;
+    animation-delay: 6s;
+}
+
+.hero-text-container {
+    display: flex;
+    justify-content: center;
+    height: 520px;
+    align-items: center;
+}
+
+.hero-text {
+    width: 350px;
+    height: fit-content;
+    position: relative;
+
+    animation: textFadeLeft 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+    color: var(--braun);
+}
+
+.hero-text p {
+    font-family: var(--normal-text);
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    opacity: 0;
+    transform: translateY(80px);
+    animation: textFadeIn 0.8s ease-in-out forwards 1.0s;
+}
+
+.hero-text h1 {
+    font-family: var(--headings);
+    font-weight: 700;
+    font-size: 4rem;
+    opacity: 0;
+    transform: translateY(80px);
+    animation: textFadeIn 0.8s ease-in-out forwards 0.6s;
+}
+
+.last-hero-effect {
+    position: relative;
+    right: 700px;
+    animation: lastEffect 0.6s ease-in-out forwards 5s;
+    opacity: 0;
+}
+
+.badge {
+    width: 160px;
+    height: 160px;
+    background-color: var(--Primary-green);
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 445px;
+    top: 285px;
+    opacity: 0;
+    animation: badgein 0.6s ease-in forwards 5s;
+}
+
+.badge-logo {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.badge-text {
+    width: 132px;
+    position: absolute;
+    animation: badgetext 15s linear infinite;
+}
