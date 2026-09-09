@@ -414,3 +414,158 @@ details[open] p {
     padding: 4px 10px;
     border-radius: 5px;
 }
+
+.contact-form {
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.contact-header p {
+    font-family: var(--normal-text);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 110%;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 530px;
+    justify-content: space-between;
+    color: var(--braun);
+    font-family: var(--normal-text);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 120%;
+}
+
+.form-message {
+    color: var(--braun);
+    font-family: var(--normal-text);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 120%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    width: 100%;
+    outline: none;
+    resize: none;
+
+    font-family: var(--normal-text);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--Primary-green);
+
+
+}
+
+textarea {
+    display: block;
+    height: 68px;
+    background: transparent;
+}
+
+
+.checkbox-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+    justify-content: space-between;
+    gap: 32px;
+
+}
+
+.checkbox-group {
+    font-family: var(--normal-text);
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--braun);
+
+}
+
+.checkbox-group a {
+    text-decoration: none;
+    color: var(--Primary-green);
+    margin: 0px 6px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--braun);
+    border-radius: 2px;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+}
+
+.checkbox-group input[type="checkbox"]:hover {
+    background-color: var(--Primary-gelb);
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: var(--Primary-green);
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-group p {
+    font-family: var(--headings);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: 5%;
+}
+
+.submit-btn {
+    background-color: transparent;
+    border: 1px solid rgba(115, 115, 115, 1);
+    border-radius: 40px;
+    height: 50px;
+    width: 140px;
+    color: rgba(115, 115, 115, 1);
+}
+
+.submit-btn:hover {
+    background-color: var(--Primary-green);
+    color: var(--Primary-gelb);
+}
+
+.submit-btn:active {
+    background-color: var(--Primary-green);
+    color: var(--Primary-gelb);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
