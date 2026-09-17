@@ -175,3 +175,25 @@ aside>div>span {
     background-color: red;
     transform: perspective(250px) rotateY(-20deg) translateX(20px);
 }
+
+.text {
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--pages-text);
+    padding-top: 20px;
+}
+
+.beaches-list {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
