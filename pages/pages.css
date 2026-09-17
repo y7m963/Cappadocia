@@ -1,0 +1,123 @@
+article {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+}
+
+article>header {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+header>section {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.article-header-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.article-header-text h3 {
+    font-family: var(--normal-text);
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--Primary-green);
+
+}
+
+.article-header-text h1 {
+    font-family: var(--headings);
+    color: var(--Primary-gelb);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
+
+.article-header-text p {
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
+
+.article-header-info ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0px;
+
+    font-family: var(--normal-text);
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.article-header-info li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+header aside {
+    width: 275px;
+    height: fit-content;
+    background-color: rgba(78, 164, 135, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    gap: 16px;
+    padding: 14px;
+}
+
+aside img {
+    width: 120px;
+}
+
+aside>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.author h4 {
+    font-family: var(--headings);
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 120%;
+    text-align: center;
+}
+
+.author p {
+    font-family: var(--headings);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 120%;
+    text-align: center;
+}
+
+aside>div>span {
+    font-family: var(--normal-text);
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
