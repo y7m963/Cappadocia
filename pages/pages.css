@@ -6,13 +6,13 @@ article {
     gap: 88px;
 }
 
-article>header {
+header>section {
     display: flex;
     justify-content: space-between;
     width: 1200px;
 }
 
-header>section {
+header>section>div {
     width: 900px;
     display: flex;
     flex-direction: column;
@@ -53,8 +53,7 @@ header>section {
     font-size: 2rem;
     line-height: 120%;
     letter-spacing: 0%;
-    color: var(--braun);
-
+    color: var(--braun)
 }
 
 .article-header-info ul {
@@ -75,7 +74,7 @@ header>section {
     gap: 6px;
 }
 
-header aside {
+section aside {
     width: 275px;
     height: fit-content;
     background-color: rgba(78, 164, 135, 0.2);
@@ -120,140 +119,6 @@ aside>div>span {
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
-
-}
-
-.carousel {
-    max-width: 1300px;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    align-items: center;
-}
-
-.carousel h3 {
-    font-family: var(--headings);
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 120%;
-    text-align: center;
-    color: var(--braun)
-}
-
-.slider {
-    height: 320px;
-    display: flex;
-    justify-content: center;
-}
-
-.slider_beaches {
-    z-index: 1;
-    width: 220px;
-    height: 100%;
-    background-color: aqua;
-    border-radius: 16px;
-
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
-    transform-origin: 50% 50%;
-    background-size: cover;
-    background-position: center;
-
-    box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
-
-
-    transition: all 250ms ease-in-out;
-}
-
-.slider_beaches:hover {
-    z-index: 2;
-    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.2) scaleY(1.2);
-    background-color: aqua;
-
-}
-
-.slider_beaches:hover~.slider_beaches {
-    background-color: red;
-    transform: perspective(250px) rotateY(-20deg) translateX(20px);
-}
-
-.text {
-    font-family: var(--normal-text);
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 120%;
-    color: var(--pages-text);
-    padding-top: 20px;
-}
-
-.beaches-list {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    font-family: var(--normal-text);
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 120%;
-    letter-spacing: 0%;
-}
-
-.tipp {
-    max-width: 1130px;
-    max-height: 260px;
-}
-
-.pro-tipp {
-    width: 200px;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    border-radius: 10px;
-    background-color: var(--Primary-green);
-    color: var(--Primary-gelb);
-
-
-
-    opacity: 1;
-    transform: rotate(-12deg);
-    margin-left: -55px;
-    margin-bottom: -20px;
-    z-index: 5;
-    position: relative;
-
-}
-
-.pro-tipp img {
-    width: 50px;
-    height: 50px;
-}
-
-.pro-tipp p {
-    font-family: var(--normal-text);
-    font-weight: 700;
-    font-size: 1.75rem;
-    line-height: 120%;
-    letter-spacing: 0%;
-}
-
-.tipp-text {
-    width: fit-content;
-    font-family: var(--normal-text);
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 120%;
-    color: var(--pages-text);
-
-    padding: 26px 16px;
-    background-color: rgba(78, 164, 135, 0.2);
-    border-radius: 30px;
-}
-
-.tipp-text a {
-    color: var(--Primary-green);
-    text-decoration: none;
 
 }
 
@@ -350,5 +215,89 @@ aside>div>span {
 
 .pages-share:has(#share-toggle:checked) .share-button-green>img {
     display: none;
+
+}
+
+.text {
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--pages-text);
+    padding-top: 20px;
+}
+
+.pages-list {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--pages-text);
+}
+
+
+
+.tipp {
+    max-width: 1130px;
+    max-height: 260px;
+}
+
+.pro-tipp {
+    width: 200px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: var(--Primary-green);
+    color: var(--Primary-gelb);
+
+
+
+    opacity: 1;
+    transform: rotate(-12deg);
+    margin-left: -55px;
+    margin-bottom: -20px;
+    z-index: 5;
+    position: relative;
+
+}
+
+.pro-tipp img {
+    width: 50px;
+    height: 50px;
+}
+
+.pro-tipp p {
+    font-family: var(--normal-text);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.tipp-text {
+    width: fit-content;
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--pages-text);
+
+    padding: 26px 16px;
+    background-color: rgba(78, 164, 135, 0.2);
+    border-radius: 30px;
+}
+
+.tipp-text a {
+    color: var(--Primary-green);
+    text-decoration: none;
 
 }
