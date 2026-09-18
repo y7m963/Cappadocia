@@ -1,0 +1,42 @@
+.article-header-text p {
+    font-size: 1.75rem;
+}
+
+article>header {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.header-text {
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color:rgba(61, 61, 61, 1);
+
+}
+
+.my-video {
+    width: 930px;
+    height: 520px;
+    border-radius: 53px;
+    object-fit: cover;
+
+    background-image: url(../assets/videos/play_circle.svg), url('../assets/videos/viedeo_img.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 100px 100px, cover;
+}
+
+
+.text-container {
+    width: 1200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
