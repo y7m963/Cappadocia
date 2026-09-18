@@ -7,13 +7,8 @@
     align-items: center;
 }
 
-.carousel h3 {
-    font-family: var(--headings);
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 120%;
-    text-align: center;
-    color: var(--braun)
+.carousel-text {
+    padding-top: 20px;
 }
 
 .slider {

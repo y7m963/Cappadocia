@@ -224,7 +224,6 @@ aside>div>span {
     font-size: 1.5rem;
     line-height: 120%;
     color: var(--pages-text);
-    padding-top: 20px;
 }
 
 .pages-list {
@@ -300,4 +299,13 @@ aside>div>span {
     color: var(--Primary-green);
     text-decoration: none;
 
+}
+
+h4 {
+    font-family: var(--headings);
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 120%;
+    text-align: center;
+    color: var(--braun)
 }
