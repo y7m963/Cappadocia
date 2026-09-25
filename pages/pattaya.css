@@ -1,0 +1,62 @@
+.article-header-text p {
+    font-size: 1.75rem;
+}
+
+article>header {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.header-text {
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgba(61, 61, 61, 1);
+
+}
+
+.rain-pattaya {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.rain-pattaya img {
+    width: 640px;
+    height: 430px;
+    border-radius: 53px;
+    box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.pattaya-evaluation {
+    display: flex;
+    gap: 80px;
+
+}
+
+.pattaya-evaluation img {
+    width: 520px;
+    height: 470px;
+    border-radius: 53px;
+    box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.pattaya-evaluation div {
+    width: 520px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+}
