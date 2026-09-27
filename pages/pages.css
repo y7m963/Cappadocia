@@ -309,3 +309,125 @@ h4 {
     text-align: center;
     color: var(--braun)
 }
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 12px;
+    }
+
+    article {
+        width: 100%;
+        max-width: 335px;
+        gap: 40px;
+    }
+
+    header>section {
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    header>section>div {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .article-header-info ul {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        font-size: 0.875rem;
+    }
+
+    .article-header-info li img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .article-header-text h1 {
+        font-size: 3.5rem;
+    }
+
+    section aside {
+        width: 100%;
+        padding: 20px 16px 24px;
+        border-radius: 30px;
+    }
+
+    aside img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .author h4 {
+        color: var(--braun);
+    }
+
+    .text,
+    .pages-list,
+    .header-text {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .pages-list {
+        gap: 12px;
+    }
+
+    .tipp {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .pro-tipp {
+        width: 160px;
+        height: 52px;
+        margin-left: 8px;
+        margin-bottom: -16px;
+        transform: rotate(-10deg);
+    }
+
+    .pro-tipp img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .tipp-text {
+        width: 100%;
+        font-size: 1rem;
+        padding: 28px 16px 20px;
+    }
+
+    .tipp-text br {
+        display: none;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .pages-share {
+        gap: 24px;
+    }
+
+    .pages-share>p {
+        font-size: 1.125rem;
+    }
+
+    .pages-share>p br {
+        display: none;
+    }
+
+    .pages-share>img {
+        left: -16px;
+        bottom: 32px;
+        width: 50px;
+    }
+
+    .share-button-green {
+        height: 44px;
+        padding: 0 20px;
+    }
+
+}
