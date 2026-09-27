@@ -625,3 +625,8 @@ footer>section {
   align-items: center;
 
 }
+
+
+.mobile-nav {
+  display: none;
+}
