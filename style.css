@@ -722,8 +722,8 @@ footer>section {
     .badge {
         width: 150px;
         height: 150px;
-        left: 130px;
-        top: 160px;
+        left: 250px;
+        top: 200px;
         z-index: 2;
         opacity: 1;
         animation: none;
@@ -846,8 +846,8 @@ footer>section {
     .badge {
         width: 140px;
         height: 140px;
-        left: 72px;
-        top: 120px;
+        left: 100px;
+        top: 150px;
         z-index: 2;
         opacity: 1;
         animation: none;
