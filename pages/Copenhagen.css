@@ -40,7 +40,7 @@ article>header {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1443px) {
     .my-video {
         width: 100%;
         height: auto;

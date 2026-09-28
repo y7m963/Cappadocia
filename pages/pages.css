@@ -310,7 +310,7 @@ h4 {
     color: var(--braun)
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1443px) {
     article {
         width: 100%;
         max-width: 100%;
