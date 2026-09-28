@@ -71,6 +71,13 @@
     clip: rect(0 0 0 0);
 }
 
+@media screen and (max-width:1200px){
+    .slider_beaches {
+    width: 180px;
+}
+    
+}
+
 @media screen and (max-width: 1024px) {
     .carousel {
         width: 100%;

@@ -791,6 +791,32 @@ footer>section {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    body {
+        padding-bottom: 80px;
+
+    }
+
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 50;
+        height: 80px;
+        width: 100%;
+        background-color: var(--Primary-gelb);
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 16px;
+    }
+
+    .mobile-nav img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     html {
         font-size: 14px;
