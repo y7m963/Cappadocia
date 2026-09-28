@@ -634,6 +634,31 @@ footer>section {
     display: none;
 }
 
+.legal {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: var(--normal-text);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 140%;
+    color: var(--pages-text);
+}
+
+.legal h1 {
+    font-family: var(--headings);
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--Primary-gelb);
+}
+
+.legal h2 {
+    font-size: 1.75rem;
+}
+
+
 
 @media screen and (min-width:1600px) {
     nav>div {
