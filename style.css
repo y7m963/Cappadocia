@@ -499,6 +499,7 @@ textarea {
     display: block;
     height: 68px;
     background: transparent;
+    overflow: hidden;
 }
 
 
@@ -636,32 +637,150 @@ footer>section {
 
 @media screen and (min-width:1600px) {
     nav>div {
-        padding: 0px 0px;   
+        padding: 0px 0px;
     }
 }
 
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 1024px) {
 
     html,
     body {
         overflow-x: hidden;
         width: 100%;
-        max-width: 375px;
-        font-size: 12px;
-    }
-
-    body {
-        padding-bottom: 88px;
+        max-width: 100%;
     }
 
     nav {
-        height: 70px;
+        height: 96px;
     }
 
     nav>div {
         width: 100%;
-        max-width: 375px;
+        max-width: 1024px;
+        padding: 0 40px;
+        gap: 48px;
+    }
+
+    .nav-bar {
+        gap: 40px;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        background-position: 40% center;
+    }
+
+    .hero-container {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .img-container,
+    .hero-text-container {
+        display: none;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 420px;
+        height: 420px;
+        background-color: var(--Primary-gelb);
+        border-bottom-right-radius: 420px;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .badge {
+        width: 150px;
+        height: 150px;
+        left: 130px;
+        top: 160px;
+        z-index: 2;
+        opacity: 1;
+        animation: none;
+    }
+
+    main {
+        width: calc(100% - 80px);
+        max-width: 944px;
+        margin: 80px 40px;
+        gap: 80px;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    .highlights-container1 {
+        padding: 0 24px;
+    }
+
+    .highlights-slider {
+        width: 100%;
+        height: 440px;
+    }
+
+    .slider-text {
+        width: calc(100% - 48px);
+        height: auto;
+        margin: 40px 24px 0;
+    }
+
+    .slider-text h3 {
+        font-size: 36px;
+    }
+
+    .slider-text p {
+        font-size: 20px;
+    }
+
+    details {
+        width: 100%;
+    }
+
+    details[open] {
+        height: auto;
+        min-height: 120px;
+    }
+
+    .contact-form {
+        margin: 0;
+    }
+
+    .form-group {
+        width: calc(50% - 16px);
+    }
+
+    body>footer {
+        padding: 0 40px;
+    }
+
+    footer>section {
+        width: 100%;
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+        scroll-padding-bottom: 88px;
+    }
+
+    body {
+        padding-bottom: 80px;
+
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    nav>div {
         padding: 0;
         gap: 0;
         justify-content: center;
@@ -677,15 +796,8 @@ footer>section {
     }
 
     .hero {
-        width: 100%;
-        max-width: 375px;
-        height: 520px;
-        background-position: 25% center;
-        background-size: cover;
-    }
-
-    .hero-container {
-        height: 100%;
+        height: 420px;
+        background-position: 30% center;
     }
 
     .img-container,
@@ -698,37 +810,38 @@ footer>section {
         position: absolute;
         top: 0;
         left: 0;
-        width: 210px;
+        width: 280px;
         height: 300px;
         background-color: var(--Primary-gelb);
-        border-bottom-right-radius: 210px;
+        border-bottom-right-radius: 280px;
         z-index: 1;
         pointer-events: none;
     }
 
     .badge {
-        width: 160px;
-        height: 160px;
-        left: 80px;
-        top: 150px;
+        width: 140px;
+        height: 140px;
+        left: 72px;
+        top: 120px;
         z-index: 2;
         opacity: 1;
         animation: none;
     }
 
     .badge-logo {
-        width: 52px;
-        height: 52px;
+        width: 44px;
+        height: 44px;
     }
 
     .badge-text {
-        width: 130px;
+        width: 112px;
     }
 
     main {
-        width: 335px;
-        margin: 48px 20px 64px;
-        gap: 56px;
+        width: calc(100% - 64px);
+        max-width: 704px;
+        margin: 56px 32px 72px;
+        gap: 64px;
     }
 
     h2 {
@@ -741,20 +854,15 @@ footer>section {
     }
 
     .highlights {
-        gap: 24px;
+        gap: 32px;
     }
 
     .highlights-container1 {
         padding: 0;
     }
 
-    .highlights-container1>p {
-        display: none;
-    }
-
     .highlights-slider {
-        width: 335px;
-        height: 520px;
+        height: 400px;
         gap: 12px;
     }
 
@@ -767,10 +875,9 @@ footer>section {
 
     .slider-text {
         width: calc(100% - 40px);
-        height: auto;
-        max-height: 230px;
+        max-height: 220px;
         overflow: hidden;
-        margin: 36px 16px 0;
+        margin: 32px 16px 0;
         padding: 12px 16px;
     }
 
@@ -792,11 +899,6 @@ footer>section {
         margin-bottom: 18px;
     }
 
-    .highlights-slider input[type="radio"]:checked {
-        width: 40px;
-        border-radius: 20px;
-    }
-
     .FAQ {
         gap: 32px;
     }
@@ -805,26 +907,14 @@ footer>section {
         gap: 16px;
     }
 
-    details {
-        width: 100%;
-    }
-
-    details[open] {
-        height: auto;
-    }
-
     summary {
         gap: 12px;
         align-items: center;
+        font-size: 1.25rem;
     }
 
     .contact-form {
-        margin: 0;
-        gap: 32px;
-    }
-
-    .contact-header p {
-        display: none;
+        gap: 40px;
     }
 
     .form-row {
@@ -843,6 +933,7 @@ footer>section {
     input[type="email"],
     textarea {
         padding: 16px 0;
+        font-size: 1.125rem;
     }
 
     .checkbox-container {
@@ -850,15 +941,11 @@ footer>section {
         margin-top: 24px;
     }
 
-    .checkbox-group {
-        text-align: left;
-    }
-
     body>footer {
         height: auto;
         min-height: 120px;
-        padding: 20px 24px 16px;
-        align-items: flex-end;
+        padding: 20px;
+        align-items: center;
     }
 
     footer>section {
@@ -898,19 +985,158 @@ footer>section {
         display: flex;
         position: fixed;
         bottom: 0;
+        left: 0;
         z-index: 50;
-        height: 88px;
+        height: 80px;
         width: 100%;
-        max-width: 375px;
-        margin: 0 auto;
         background-color: var(--Primary-gelb);
         align-items: center;
         justify-content: space-around;
-        padding: 0 12px;
+        padding: 0 16px;
     }
 
     .mobile-nav img {
         width: 32px;
         height: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        padding-bottom: 72px;
+
+    }
+
+    nav {
+        height: 70px;
+    }
+
+    nav>div {
+        width: 100%;
+        padding: 0;
+        gap: 0;
+        justify-content: center;
+    }
+
+    nav img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .hero {
+        height: 480px;
+        background-position: 25% center;
+    }
+
+    .hero::before {
+        width: 180px;
+        height: 260px;
+        border-bottom-right-radius: 180px;
+    }
+
+    .badge {
+        width: 132px;
+        height: 132px;
+        left: 48px;
+        top: 110px;
+    }
+
+    .badge-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .badge-text {
+        width: 104px;
+    }
+
+    main {
+        width: calc(100% - 32px);
+        margin: 40px 16px 56px;
+        gap: 48px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .highlights-container1>p {
+        display: none;
+    }
+
+    .highlights-slider {
+        height: 360px;
+    }
+
+    .slider-text h3 {
+        font-size: 22px;
+    }
+
+    .slider-text p {
+        font-size: 14px;
+    }
+
+    .contact-header p {
+        display: none;
+    }
+
+    .checkbox-group {
+        font-size: 0.875rem;
+    }
+
+    body>footer {
+        padding: 16px 16px 12px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .footer-text>div {
+        order: 3;
+        align-items: center;
+    }
+
+    .footer-text img {
+        width: 16px;
+    }
+
+    .footer-social-media {
+        gap: 10px;
+        padding-bottom: 4px;
+    }
+
+    .footer-social-media img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 50;
+        height: 72px;
+        width: 100%;
+        background-color: var(--Primary-gelb);
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 8px;
+    }
+
+    .mobile-nav img {
+        width: 28px;
+        height: 28px;
     }
 }

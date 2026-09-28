@@ -60,92 +60,36 @@ article>header {
 
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-
-    nav>div {
-        padding: 0px 90px;
-        width: 1024px;
-    }
-
-    main {
-        width: 1000px;
-    }
-
-    article {
-        width: 1024px;
-    }
-
+@media screen and (max-width: 1024px) {
     article>header {
-        align-items: center;
-        width: 1000px;
-    }
-
-    header>section {
-        width: 1000px;
-    }
-
-    .text {
-        max-width: 1000px;
+        width: 100%;
     }
 
     .rain-pattaya {
-        width: 1000px;
+        width: 100%;
+    }
+
+    .rain-pattaya img {
+        width: min(640px, 100%);
+        height: auto;
     }
 
     .pattaya-evaluation {
-        flex-direction: column;
+        gap: 40px;
+        width: 100%;
     }
 
+    .pattaya-evaluation div {
+        width: calc(50% - 20px);
+    }
+
+    .pattaya-evaluation img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-@media screen and (min-width:376px) and (max-width:768px) {
-
-    html {
-        font-size: 14px;
-    }
-
-    nav>div {
-        padding: 0px 40px;
-        width: 750px;
-    }
-
-    main {
-        width: 750px;
-        margin: 60px;
-    }
-
-    article {
-        width: 750px;
-    }
-
-    article>header {
-        align-items: center;
-        width: 750px;
-    }
-
-    header>section {
-        width: 750px;
-    }
-
-    .rain-pattaya {
-        width: 750px;
-    }
-
-    .pattaya-evaluation {
-        flex-direction: column;
-    }
-
-    body>footer {
-        padding: 0px 40px;
-    }
-
-    .footer-text {
-        width: 400px;
-    }
-
-}
-
-@media screen and (max-width:375px) {
+@media screen and (max-width: 768px) {
     article>header {
         width: 100%;
         gap: 24px;
@@ -159,12 +103,13 @@ article>header {
     .rain-pattaya img {
         width: 100%;
         height: auto;
-        border-radius: 24px;
+        border-radius: 32px;
     }
 
     .pattaya-evaluation {
         flex-direction: column;
         gap: 40px;
+        width: 100%;
     }
 
     .pattaya-evaluation div {
@@ -175,6 +120,13 @@ article>header {
     .pattaya-evaluation img {
         width: 100%;
         height: auto;
-        border-radius: 24px;
+        border-radius: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .rain-pattaya img,
+    .pattaya-evaluation img {
+        border-radius: 20px;
     }
 }
