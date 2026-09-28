@@ -17,6 +17,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -423,6 +424,7 @@ details[open] p {
     margin: 4px 10px;
     padding: 4px 10px;
     border-radius: 5px;
+    font-family: var(--normal-text);
 }
 
 .contact-form {
@@ -629,6 +631,13 @@ footer>section {
 
 .mobile-nav {
     display: none;
+}
+
+
+@media screen and (min-width:1600px) {
+    nav>div {
+        padding: 0px 0px;   
+    }
 }
 
 @media screen and (max-width: 375px) {
